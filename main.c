@@ -149,7 +149,7 @@ void soal(){
     getchar();
     system("cls");
     printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
-    printf("\n\n\t\t\t\Benua yang dijuluki dengan nama benua biru adalah...n\n");
+    printf("\n\n\t\t\tBenua yang dijuluki dengan nama benua biru adalah...n\n");
     printf("\t\t\t\tA. Benua Amerika\n");
     printf("\t\t\t\tB. Benua Eropa\n");
     printf("\t\t\t\tC. Benua Asia\n\n");
@@ -172,7 +172,7 @@ void soal(){
     getchar();
     system("cls");
     printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
-    printf("\n\n\t\t\t\Nama lain dari negara Inggris adalah...?n\n");
+    printf("\n\n\t\t\tNama lain dari negara Inggris adalah...?n\n");
     printf("\t\t\t\tA. Britania Raya\n");
     printf("\t\t\t\tB. Netherland\n");
     printf("\t\t\t\tC. Amsterdam\n\n");
