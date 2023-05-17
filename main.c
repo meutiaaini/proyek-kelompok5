@@ -106,8 +106,8 @@ if(manyArgument == 3){
         } 
         else{
             printf("Login berhasil!");
-            printf("\n\n\t\t\t\tSelamat datang di \"UANG KAGET\"");
-            printf("\n\n\t\t\t\tJadilah jutawan dengan hanya menjawab beberapa pertanyaan!!!");
+            printf("\n\n\t\t\t\tWelcome to \"QUIZ PINTAR\"");
+            printf("\n\n\t\t\t\tyuk jawab quiz pintar agar kamu semakin pintar!!!");
             printf("\n\t\t\t\tTekan \"ENTER\" untuk memulai permainan!\n\n");
             getchar();
             soal();
@@ -116,3 +116,75 @@ if(manyArgument == 3){
     }
     return 0;
 }
+void soal(){
+    int hadiah=0; 
+    char jawaban;
+
+    //soal 1    
+    printf("\n\nHadiah untuk pertanyaan pertama = Rp200.000\n");
+    printf("\n\t\t\t\tTekan \"ENTER\" untuk menuju ke soal pertama!");
+    getchar();
+    system("cls");
+    printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
+    printf("\n\n\t\t\tDiketahui segitiga XYZ dengan <X = <Y = 45. Jenis segitiga XYZ adalah...\n\n");
+    printf("\t\t\t\tA. Segitiga siku-siku \n");
+    printf("\t\t\t\tB. segitiga sama kaki\n");
+    printf("\t\t\t\tC. Jawaban a dan b benar\n\n");
+    printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
+    scanf("%c", &jawaban);
+    getchar();
+
+    if(jawaban=='C'){
+        printf("\n\nSelamat jawaban anda benar!");
+        hadiah+=200000;
+    }
+    else{
+        printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+        exit(1);
+    }
+    
+    //soal 2    
+    printf("\n\nHadiah untuk pertanyaan kedua = Rp400.000\n");
+    printf("\n\t\t\t\tTekan \"ENTER\" untuk menuju soal berikutnya!");
+    getchar();
+    system("cls");
+    printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
+    printf("\n\n\t\t\t\Benua yang dijuluki dengan nama benua biru adalah...n\n");
+    printf("\t\t\t\tA. Benua Amerika\n");
+    printf("\t\t\t\tB. Benua Eropa\n");
+    printf("\t\t\t\tC. Benua Asia\n\n");
+    printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
+    scanf("%c", &jawaban);
+    getchar();
+
+    if(jawaban=='B'){
+        printf("\n\nSelamat jawaban anda benar!");
+        hadiah+=400000;
+    }
+    else{
+        printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+        exit(1);
+    }
+    
+    //soal 3    
+    printf("\n\nHadiah untuk pertanyaan ketiga = Rp800.000\n");
+    printf("\n\t\t\t\tTekan \"ENTER\" untuk menuju soal berikutnya!");
+    getchar();
+    system("cls");
+    printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
+    printf("\n\n\t\t\t\Nama lain dari negara Inggris adalah...?n\n");
+    printf("\t\t\t\tA. Britania Raya\n");
+    printf("\t\t\t\tB. Netherland\n");
+    printf("\t\t\t\tC. Amsterdam\n\n");
+    printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
+    scanf("%c", &jawaban);
+    getchar();
+
+    if(jawaban=='A'){
+        printf("\n\nSelamat jawaban anda benar!");
+        hadiah+=800000;
+    }
+    else{
+        printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+        exit(1);
+    }
