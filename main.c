@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct registration
+typedef struct
 {
     char name[20];
     char job[20];
@@ -47,7 +47,7 @@ int main(int manyArgument, char *argument[])
         fwrite(reg.username, sizeof(char), sizeof(reg.username)/sizeof(char), fpw);
 
         fclose(fpw);
-    } // akhir proses registrasi
+    } // akhir proses registrasii
     
 }
 
